@@ -1,0 +1,170 @@
+:root {
+    --main-color:#F9F8FC;
+    --prim-color:#876CEF;
+    --sec-color:#4329A6;
+    --grey:#e3e3e8;
+    --gold:#F0A962;
+    --peach:#F39A9A;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Space Grotesk";
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-top: 70px;
+    background-color: var(--main-color);
+    background-image: url(../images/hackathon/hero_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: auto;
+    & h1{
+        font-size: 4rem;
+        font-weight: 800;
+        color: var(--main-color);
+        /* background: linear-gradient(to bottom, var(--prim-color), var(--sec-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+    }
+    & .search-box{
+        font-size: 1.2rem;
+        padding: 10px 30px;
+        margin-top: 20px;
+        border: solid 2px black;
+        border-radius: 30px;
+    }
+    & .bi-search{
+        position: relative;
+        right: 40px;
+    }
+}
+.hero-border{
+    background-color: var(--grey);
+    height: 10vh;
+    width: 100%;
+}
+
+
+.main{
+    margin: 10vh ;
+    margin-left: 18vh;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+}
+.card-container{
+    border: solid 1px grey;
+    border-radius: 8px;
+    width: 40vh;
+    /* height: 60vh; */
+    position: relative;
+    & .card-image>img{
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+        object-fit: contain;  
+    }
+}
+.card-logo{
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    border: solid 2px black;
+    background-color: white;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 300px;
+    margin: 10px 10px;
+    z-index: 9;
+    & img{
+        width: 100%;
+    }
+}
+.card-text-container{
+    position: relative;
+    bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    & .icons{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 10px;
+        text-align: center;
+        & .bi{
+            margin: 0 5px;
+        }
+        & .icon-text{
+            margin: 0 2px;
+            position: relative;
+            bottom: 1px;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            color: var(--prim-color);
+        } 
+    }
+    & .card-text{
+        & h3{
+        }
+        & p{
+            margin: 10px 0;     
+            color:grey;
+        }
+    }
+}
+.tags-container{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+    font-size: 11px;
+    flex-wrap: wrap;
+    & .tags{
+        border: solid 1px black;
+        border-radius: 50px;
+        padding: 5px 10px;
+        margin: 5px 5px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        & .dot{
+            background-color: orange;
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+        }
+    }
+}
+.tags:hover{
+    border: none;
+    background-color: var(--prim-color);
+}
+
+.prize-container{
+    border-top: solid 1px black;
+    h4{
+        font-size: 17px;
+        letter-spacing: 2px;
+        color: grey;
+        margin: 5px 0;
+    }
+    p{
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+}
+
+.card-container:hover{
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.317);
+    transition:0.5s;
+    /* transform: scale(1.05); */
+}
