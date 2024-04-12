@@ -11,12 +11,14 @@ router.get('/hackathon', function(req, res, next) {
   res.render('hackathon');
 });
 
-//login page
+//login
 router.get('/login', function(req, res, next) {
   res.render('login');
 });
 
-
+router.get('/profile', function(req, res, next) {
+  res.render('profile');
+});
 
 //organisatin page
 router.get('/organisations', function(req, res, next) {
