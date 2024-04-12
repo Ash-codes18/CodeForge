@@ -14,4 +14,8 @@ router.get('/login', function(req, res, next) {
 
 
 
+//organisatin page
+router.get('/organisations', function(req, res, next) {
+  res.render('organisation');
+});
 module.exports = router;

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisations</title>
+    <link rel="stylesheet" href="stylesheets/organisation.css">
+    <!-- <link rel="stylesheet" href="/images/ranit/"> -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="text-gray-600 body-font" id="header">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img src="images/assets/logo.svg" height="150" width="150">
+            <!-- <span class="ml-0 text-xl">CodeForge</span> -->
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" >Hackathons</a>
+            <a class="mr-5 hover:text-gray-900">Organizations</a>
+            <a class="mr-5 hover:text-gray-900">Winners</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Log In
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>  
+    <div id="main"> 
+        <div id="text1"><span id="one">Simplify Your</span>
+            <br>    
+        <span id="two">Hackathon Experience</span>
+        </div>
+        <div id="text2">Managing a hackathon can be a challenge without the right tools. We simplified this process to create  <br>
+            a better platform experience for your organization.</div>
+            <div id="host"><button id="hostbtn">Host Hackathon</button></div>
+            <div id="text3">
+                <span id="head">10+ Clubs & Companies collaborating with us</span>
+                <div class="flexing">
+                    <img src="images\ranit\cn-lpu-logo.png" alt="">
+                    <img src="images\ranit\cblogo.webp" alt="">
+                    <img src="images\ranit\3.png" alt="">
+                    <img src="images\ranit\image2.png" alt="">
+                </div>
+                <div class="flexing">
+                    <span>WISSEN <br> LPU</span>
+                    <span>TECH <br> STACK   </span>
+                    <SPAN>DSO</SPAN>
+                    <span>ABCD</span>
+                </div>
+            </div>
+
+           <div id="fea">
+            <span>Features</span>
+            <div id="features">
+                <div class="col" id="back1">
+                    <span>MATCHMAKING</span>
+                    <div class="text">ZENDEV's Matchmaking feature helps your participants to team up for the challenge without leaving the hackathon page.</div>
+                    <div class="img">
+                    </div>
+                </div>
+                <div class="col" id="back2">
+                    <span>LEADERBOARD</span>
+                    <div class="text">
+                        We offer a leaderboard for online and hybrid hackathons to showcase real-time voting and announcement of the winners.
+                    </div>
+                </div>
+                <div class="col" id="back3">
+                    <span>WINNING PROJECTS</span>
+                    <div class="text">Find the winnig the projects of the previous Hackathon listed below & You can also download the src file or access the github repo</div>
+                </div>
+                <div id="fea3"><div class="col1" id="back5">Attract and hire talent</div></div>
+            <div id="fea3"><div class="col1" id="back4">Custom hackathon page</div></div>
+           
+            </div>
+           </div>    
+    </div>
+    <div id="popup" class="hide">
+        <button id="closebtn"><i class="fa-solid fa-circle-xmark" style="color: #8259fb;"></i></button>
+        <form action="">
+            <span>Host Hackathon</span>
+            <div class="ele">
+                <label for="Name">Hackathon Name:</label>
+                <input type="text" id="name" name="Name">
+            </div>
+            <div class="ele">
+                <label for="Des">Enter Description:</label>
+                <input type="text" id="des" name="Des">
+            </div>
+            <div class="ele">
+                <label for="Niche">Enter Niche/Topics:</label>
+                <select name="Niche" id="niche" >
+                    <option value="C++">C++</option>
+                    <option value="DSA">DSA</option>
+                    <option value="Java">Java</option>
+                    <option value="Pyhton">Python</option>
+                    <option value="ML">Machine Learning</option>
+                    <option value="Data Science">Data Science</option>
+                </select>
+            </div>
+            <div class="ele">
+                <label for="Prize">Enter Prize Amount:</label>
+                <input type="number" id="prize" name="Prize">
+            </div>
+        </form>
+       <center> <button id="submit" type="submit">Submit</button></center>
+    </div>
+    
+    <footer class="text-gray-600 body-font" id="footer">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <img src="images/assets/logo.svg">
+              <!-- <span class="ml-3 text-xl">CodeForge</span> -->
+            </a>
+            <p class="mt-2 text-sm text-gray-500">The platform to Launch and Join Hackathons</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Products</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Hackathons</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Host a Hackathon</a>
+                </li>
+              </nav>
+            </div>
+            
+             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Community</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Organizations</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Discord</a>
+                </li>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Past Winners</a>
+                </li>
+              </nav>
+            </div>
+           
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Company</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">About Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Careers</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Help</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">FAQs</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Support</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">Copyright © 2024  — CodeForge All rights reserved.
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <i class="fa-brands fa-discord"></i>            
+              </a>
+              <a class="ml-3 text-gray-500">
+                <i class="fa-brands fa-instagram"></i>            
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+  
+  
+    <script src="javascripts/organisation.js"></script>
+</body>
+</html>
