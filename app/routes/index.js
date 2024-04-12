@@ -21,7 +21,8 @@ router.get('/profile', function(req, res, next) {
 });
 
 //organisatin page
-router.get('/organisations', function(req, res, next) {
+router.get('/organisation', function(req, res, next) {
   res.render('organisation');
 });
+
 module.exports = router;
