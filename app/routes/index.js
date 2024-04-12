@@ -5,6 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index');
 });
+
+//hackathon page
 router.get('/hackathon', function(req, res, next) {
   res.render('hackathon');
 });
