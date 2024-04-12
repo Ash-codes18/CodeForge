@@ -10,6 +10,9 @@ router.get('/', function(req, res, next) {
 router.get('/hackathon', function(req, res, next) {
   res.render('hackathon');
 });
+router.get('/login', function(req, res, next) {
+  res.render('login');
+});
 
 
 
