@@ -11,11 +11,12 @@ router.get('/hackathon', function(req, res, next) {
   res.render('hackathon');
 });
 
-//login
+//login page
 router.get('/login', function(req, res, next) {
   res.render('login');
 });
 
+//profile page
 router.get('/profile', function(req, res, next) {
   res.render('profile');
 });
