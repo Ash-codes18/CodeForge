@@ -1,11 +1,302 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>CodeForge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/assets/logo-favicon-color.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <header class="text-gray-600 body-font" id="header">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <img src="images/assets/logo.svg" height="150" width="150">
+          <!-- <span class="ml-0 text-xl">CodeForge</span> -->
+        </a>
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 hover:text-gray-900" >Hackathons</a>
+          <a class="mr-5 hover:text-gray-900">Organizations</a>
+          <a class="mr-5 hover:text-gray-900">Winners</a>
+        </nav>
+        <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Log In
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+  
+    <section class="text-gray-600 body-font" id="shapes">
+      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+
+        <div class="text-center lg:w-2/3 w-full">
+          <h1 class="font-heading" >The platform to</h1>
+          <p class="mb-8 leading-relaxed font-heading"><span class="font-heading color-primary">Launch</span> and <span class="font-heading color-primary">Join Hackathons</span></p>
+          
+          <div class="mb-8">
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">CodeForge is a hackathon platform that allows the organizations within LPU to host fun hackathons with talented developers.  We offer innovators a fun and exiciting way to learn new skills, build cool projects, and earn rewards.</p>
+          </div>
+    
+          <div class="flex justify-center">
+            <button class="text-white border-0 py-2 px-6 focus:outline-none rounded text-lg bg-primary">For Participants <i class="fa-solid fa-angle-right"></i></button>
+            <button class="ml-4 text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-400 rounded text-lg">For Organizers <i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="text-gray-600">
+      <div class="container px-5 py-8 mt-8 mx-auto">
+        <div class="text-center mb-20">
+          <p class="mx-auto color-primary font-text">START HACKING WITH CodeForge</p>
+          <h1 class=" text-gray-900 mb-4 font-title">It's time to build that cool project you've always wanted</h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray">Compete in prestigious global hackathons, develop your skills, learn new tech, and win prizes - all while having fun, too.</p>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 mt-4 mx-auto">
+        <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+          <div class="sm:w-1/2 mb-10 px-4">
+
+            <h2 class="title-font text-2xl font-medium navy mt-6 mb-3">Showcase your projects</h2>
+            <p class="leading-relaxed text-base mb-6">Customize your presentation and pitch your project to the world. You got this.</p>
+
+
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://taikai.network/_next/image?url=https%3A%2F%2Ftaikai.azureedge.net%2FyHQn5bkU87QJHswRbarLigbQWlhO9mwaqNdtcvTBtFc%2Frs%3Afit%3A1100%3A1423%3A0%2Fg%3Ano%2FaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2xhbmRpbmcvaG9tZXBhZ2UvcHJvamVjdHMtcGFnZS5wbmc.png&w=1920&q=75">
+            </div>
+
+          </div>
+          <div class="sm:w-1/2 mb-10 px-4">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full mb-4" src="https://taikai.network/product-shots/prizes.svg">
+            </div>
+            <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Earn prizes and badges</h2>
+            <p class="leading-relaxed text-base">We believe that hackathons should be more than just winning. That's why we offer badges to all participants who create valuable projects through holopin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        <img class="h-25 w-50 mb-10 object-cover object-center rounded" alt="hero" src="images/assets/img-home.png">
+        <div class="text-center lg:w-2/3 w-full">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Friendly UI</h1>
+          <p class="mb-8 leading-relaxed">Never lose track of your hard work. Upload your project assets, stay up-to-date with the next steps and access the challenge information with an easy and user-friendly interface.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="text-gray-600 py-4 body-font">
+      <div class="container mx-auto flex px-5 py-4 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Find teammates
+          </h1>
+          <p class="mb-8 leading-relaxed">Looking to join forces? We got you covered. Use our matchmaking system to find teammates or get invited by other teams to participate in the competition.</p>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img class="object-cover object-center rounded" alt="hero" src="https://taikai.network/_next/image?url=https%3A%2F%2Ftaikai.azureedge.net%2FLNx4JZkWYQ1v7ifWoOErinW1lTDfvBci018X4OskP6w%2Frs%3Afit%3A1036%3A328%3A0%2Fg%3Ano%2FaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2xhbmRpbmcvaG9tZXBhZ2UvZmluZC10ZWFtbWF0ZXMucG5n.png&w=1920&q=75">
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="text-gray-600">
+      <div class="container px-5 py-20 mx-auto">
+        <div class="text-center mb-20">
+          <p class="mx-auto color-primary font-text">FOR ORGANIZATIONS</p>
+          <h1 class=" text-gray-900 mb-4 font-title">Simplify Your Hackathon Experience</h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray">Managing a hackathon can be a challenge without the right tools. We simplified this process to create a better platform experience for your organization.</p>
+          </div>
+        </div>
+    </section>
+
+
+
+    
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 mx-auto">
+        <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+          <div class="sm:w-1/2 mb-10 px-4">
+
+            <h2 class="title-font text-2xl font-medium navy mt-6 mb-3">Easy hackathon setup</h2>
+            <p class="leading-relaxed text-base mb-6">Streamline your event planning and execution with our hackathon management platform. All the features you need to run a successful hackathon such as participant registration, team matchmaking, event timeline, internal chat, and more - in a single tool.</p>
+
+
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="images/assets/triangle.png">
+            </div>
+
+          </div>
+          <div class="sm:w-1/2 mb-10 px-4">
+            <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Custom hackathon page</h2>
+            <p class="leading-relaxed text-base mb-6">Convert more participants with a complete and well-organized landing page. Customize your brand and assets with all the information required for your challenge and a simple registration process.</p>
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://taikai.network/_next/image?url=https%3A%2F%2Ftaikai.azureedge.net%2FQQNKAUtdTextmMKUhBxrEbPrnmF7VfPADeL-G8KTy-g%2Frs%3Afit%3A1100%3A650%3A0%2Fg%3Ano%2FaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2xhbmRpbmcvaG9tZXBhZ2UvY3VzdG9tLWhhY2thdGhvbi1wYWdlLnBuZw.png&w=1920&q=75">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <button class="mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Explore more features <i class="fa-solid fa-angle-right"></i></button>
+      </div>
+      
+
+    </section>
+    
+    
+    <section class="text-gray-600 body-font">
+
+    <div class="container px-5 mt-24 mx-auto">
+      <div class="text-center mb-20">
+        <p class="mx-auto color-primary font-text">FEATURES</p>
+        <h1 class=" text-gray-900 font-title">All the tools you need, in a single platform</h1>
+        </div>
+      </div>
+
+      <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
+        <div class="text-center lg:w-2/3 w-full">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Submission Dashboard</h1>
+          <p class="mb-8 leading-relaxed">Allow participants to submit their projects in rich formats with images, videos, and attachments, in a user-friendly environment for participants and judge.
+          </p>
+        </div>
+        <img class="h-25 w-50 mb-10 object-cover object-center rounded" alt="hero" src="https://taikai.network/product-shots/submission-dashboard.svg">
+      </div>
+
+      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        <div class="text-center lg:w-2/3 w-full">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Highly Secured</h1>
+          <p class="mb-8 leading-relaxed">Keeping your security at the highest level is our top priority. Our web application has been rigorously checked for any potential loopholes and constantly updated to ensure the safety of your data.
+          </p>
+        </div>
+        <img class="h-25 w-50 mb-10 object-cover object-center rounded" alt="hero" src="https://taikai.network/product-shots/submission-dashboard.svg">
+      </div>
+    </section>
+
+
+    <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 mb-24 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Collaborate with the community
+          </h1>
+          <p class="mb-8 leading-relaxed">Join our ever-growing community and get access to the latest hackathons happening around the world. Our Discord is the place to discuss projects, form teams, contact support and share your ideas.</p>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img class="object-cover object-center rounded" alt="hero" src="images/assets/discord.png">
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer class="text-gray-600 body-font" id="footer">
+      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="images/assets/logo.svg">
+            <!-- <span class="ml-3 text-xl">CodeForge</span> -->
+          </a>
+          <p class="mt-2 text-sm text-gray-500">The platform to Launch and Join Hackathons</p>
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Products</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Hackathons</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Host a Hackathon</a>
+              </li>
+            </nav>
+          </div>
+          
+           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Community</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Organizations</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Discord</a>
+              </li>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Past Winners</a>
+              </li>
+            </nav>
+          </div>
+         
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Company</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">About Us</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Careers</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Help</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">FAQs</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Support</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Terms & Conditions</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-gray-500 text-sm text-center sm:text-left">Copyright © 2024  — CodeForge All rights reserved.
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <i class="fa-brands fa-discord"></i>            
+            </a>
+            <a class="ml-3 text-gray-500">
+              <i class="fa-brands fa-instagram"></i>            
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+
+
   </body>
 </html>
