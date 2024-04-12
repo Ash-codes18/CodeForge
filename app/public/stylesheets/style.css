@@ -1,8 +1,79 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+:root{
+
+--font-primary : "Space Grotesk", sans-serif;
+--font-heading : 3.5rem;
+--font-title : 2.5rem;
+--font-text : 1rem;
+--primary : #876CEF;  
+--primary-variant : #4329A6;
+--white : #F9F8FC;
+--border : rgb(47,47,47);
+
+--navy : #0A192F;
+--white-alpha: hsla(0, 0%, 100%, 0.2);
+
 }
 
-a {
-  color: #00B7FF;
+
+body{
+  font-family: var(--font-primary);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity to your preference */
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(4px); /* Adjust the blur radius as needed */
+}
+
+/* Additional styles for button hover state */
+header button:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the opacity to your preference */
+}
+
+
+#shapes{
+  background-image: url('/app/assets/shapes.png');
+  background-size: cover;
+}
+
+
+.font-heading{
+  font-size: var(--font-heading);
+}
+
+.font-title{
+  font-size: var(--font-title);
+}
+
+.font-text{
+  font-size: var(--font-text);
+}
+
+.color-primary{
+  color: var(--primary);
+}
+
+.navy{
+  color: var(--navy);
+}
+
+.bg-primary{
+  background-color : var(--primary);
+}
+
+.bg-primary:hover{
+  background-color : var(--primary-variant);
+}
+
+
+#footer{
+  border-top: 1px solid var(--border);
 }
