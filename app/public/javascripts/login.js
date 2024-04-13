@@ -37,3 +37,13 @@ function moveSlider() {
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", moveSlider);
 });
+
+// Check if the element with id "submit" exists before adding event listener
+const submitButton = document.getElementById("submit");
+if (submitButton) {
+  submitButton.addEventListener("click", function () {
+    const username = document.getElementById("name2").value;
+    localStorage.setItem('username-ppl', username);
+    console.log('username saved:', username);
+  });
+}

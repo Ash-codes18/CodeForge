@@ -40,7 +40,7 @@ header button:hover {
 
 
 #shapes{
-  background-image: url('/app/assets/shapes.png');
+  background-image: url('../images/assets/shapes.png');
   background-size: cover;
 }
 
