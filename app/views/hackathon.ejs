@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
     <link rel="stylesheet" href="stylesheets/hackathon.css">
+    <script src="javascripts/search.js" defer></script>
     <!-- @RishavD3V -->
 </head>
 <body>
@@ -42,7 +43,7 @@
             <h1>Hackathons</h1>
         </div>
         <div class="hero-search">
-            <input class="search-box" type="text" placeholder="Search Hackathon">
+            <input class="search-box" id="searchInput" type="text" placeholder="Search a Hackathon">
             <a href=""><i class="bi bi-search"></i></a>
         </div>
     </section>
@@ -51,6 +52,153 @@
 
 
     <section class="main">
+
+
+      <div class="card-container">
+        <div class="card-image">
+            <img src="https://img.freepik.com/free-vector/hackathon-isometric-landing-software-development_107791-2942.jpg" alt="">
+        </div>
+        <div class="card-logo">
+            <img src="/images/hackathon/3.png" alt="">
+        </div>
+        <div class="card-text-container">
+            <div class="icons">
+                <i class="bi bi-people-fill"><span class="icon-text">120</span></i>
+                <i class="bi bi-coin"></i>
+            </div>
+            <div class="card-text">
+                <h3 class="name">Binary Blitz</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur inventore magnam quia delectus eos?</p>
+            </div>
+            <div class="tags-container">
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">React</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">WEB3</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">Blockchain</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">NFT</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">Privacy</p>
+                </div>
+            </div>
+            <div class="progress-bar"></div>
+             <div class="prize-container">
+                <h4>Prize</h4>
+                <p>$2000</p>
+
+             </div>
+        </div>
+    </div>
+
+      <div class="card-container">
+        <div class="card-image">
+            <img src="https://img.freepik.com/free-vector/hackathon-isometric-landing-software-development_107791-2942.jpg" alt="">
+        </div>
+        <div class="card-logo">
+            <img src="/images/hackathon/3.png" alt="">
+        </div>
+        <div class="card-text-container">
+            <div class="icons">
+                <i class="bi bi-people-fill"><span class="icon-text">120</span></i>
+                <i class="bi bi-coin"></i>
+            </div>
+            <div class="card-text">
+                <h3 class="name">Hackverse</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur inventore magnam quia delectus eos?</p>
+            </div>
+            <div class="tags-container">
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">React</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">WEB3</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">Blockchain</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">NFT</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">Privacy</p>
+                </div>
+            </div>
+            <div class="progress-bar"></div>
+             <div class="prize-container">
+                <h4>Prize</h4>
+                <p>$2000</p>
+
+             </div>
+        </div>
+    </div>
+
+      <div class="card-container">
+        <div class="card-image">
+            <img src="https://img.freepik.com/free-vector/hackathon-isometric-landing-software-development_107791-2942.jpg" alt="">
+        </div>
+        <div class="card-logo">
+            <img src="/images/hackathon/3.png" alt="">
+        </div>
+        <div class="card-text-container">
+            <div class="icons">
+                <i class="bi bi-people-fill"><span class="icon-text">120</span></i>
+                <i class="bi bi-coin"></i>
+            </div>
+            <div class="card-text">
+                <h3 class="name">Smarth India Hackathon</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur inventore magnam quia delectus eos?</p>
+            </div>
+            <div class="tags-container">
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">React</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">WEB3</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">Blockchain</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">NFT</p>
+                </div>
+                <div class="tags">
+                    <div class="dot"></div>
+                    <p class="skills">Privacy</p>
+                </div>
+            </div>
+            <div class="progress-bar"></div>
+             <div class="prize-container">
+                <h4>Prize</h4>
+                <p>$2000</p>
+
+             </div>
+        </div>
+    </div>
+
+
+
+
+
         <div class="card-container">
             <div class="card-image">
                 <img src="https://img.freepik.com/free-vector/hackathon-isometric-landing-software-development_107791-2942.jpg" alt="">
@@ -64,29 +212,29 @@
                     <i class="bi bi-coin"></i>
                 </div>
                 <div class="card-text">
-                    <h3>Build-a-Thon</h3>
+                    <h3 class="name">Build-a-Thon</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur inventore magnam quia delectus eos?</p>
                 </div>
                 <div class="tags-container">
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>React</p>
+                        <p class="skills">React</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>WEB3</p>
+                        <p class="skills">WEB3</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>Blockchain</p>
+                        <p class="skills">Blockchain</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>NFT</p>
+                        <p class="skills">NFT</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>Privacy</p>
+                        <p class="skills">Privacy</p>
                     </div>
                 </div>
                 <div class="progress-bar"></div>
@@ -110,29 +258,29 @@
                     <i class="bi bi-coin"></i>
                 </div>
                 <div class="card-text">
-                    <h3>Build-a-Thon</h3>
+                    <h3 class="name">Build-a-Thon</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur inventore magnam quia delectus eos?</p>
                 </div>
                 <div class="tags-container">
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>React</p>
+                        <p class="skills">React</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>WEB3</p>
+                        <p class="skills">WEB3</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>Blockchain</p>
+                        <p class="skills">Blockchain</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>NFT</p>
+                        <p class="skills">NFT</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>Privacy</p>
+                        <p class="skills">Privacy</p>
                     </div>
                 </div>
                 <div class="progress-bar"></div>
@@ -156,29 +304,29 @@
                     <i class="bi bi-coin"></i>
                 </div>
                 <div class="card-text">
-                    <h3>Build-a-Thon</h3>
+                    <h3 class="name">Build-a-Thon</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur inventore magnam quia delectus eos?</p>
                 </div>
                 <div class="tags-container">
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>React</p>
+                        <p class="skills">React</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>WEB3</p>
+                        <p class="skills">WEB3</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>Blockchain</p>
+                        <p class="skills">Blockchain</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>NFT</p>
+                        <p class="skills">NFT</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>Privacy</p>
+                        <p class="skills">Privacy</p>
                     </div>
                 </div>
                 <div class="progress-bar"></div>
@@ -202,29 +350,29 @@
                     <i class="bi bi-coin"></i>
                 </div>
                 <div class="card-text">
-                    <h3>Build-a-Thon</h3>
+                    <h3 class="name">Build-a-Thon</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur inventore magnam quia delectus eos?</p>
                 </div>
                 <div class="tags-container">
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>React</p>
+                        <p class="skills">React</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>WEB3</p>
+                        <p class="skills">WEB3</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>Blockchain</p>
+                        <p class="skills">Blockchain</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>NFT</p>
+                        <p class="skills">NFT</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>Privacy</p>
+                        <p class="skills">Privacy</p>
                     </div>
                 </div>
                 <div class="progress-bar"></div>
@@ -248,29 +396,29 @@
                     <i class="bi bi-coin"></i>
                 </div>
                 <div class="card-text">
-                    <h3>Build-a-Thon</h3>
+                    <h3 class="name">Build-a-Thon</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur inventore magnam quia delectus eos?</p>
                 </div>
                 <div class="tags-container">
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>React</p>
+                        <p class="skills">React</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>WEB3</p>
+                        <p class="skills">WEB3</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>Blockchain</p>
+                        <p class="skills">Blockchain</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>NFT</p>
+                        <p class="skills">NFT</p>
                     </div>
                     <div class="tags">
                         <div class="dot"></div>
-                        <p>Privacy</p>
+                        <p class="skills">Privacy</p>
                     </div>
                 </div>
                 <div class="progress-bar"></div>
@@ -281,6 +429,12 @@
                  </div>
             </div>
         </div>
+
+        <div id="noResults" style="display: none;">
+          No matching results found
+      </div>
+
+
     </section>
 
     <footer class="text-gray-600 body-font" id="footer">
