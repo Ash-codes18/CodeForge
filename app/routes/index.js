@@ -31,4 +31,9 @@ router.get('/hackathon-info', function(req, res, next) {
   res.render('hackathon-info');
 });
 
+//about page
+router.get('/about', function(req, res, next) {
+  res.render('about');
+});
+
 module.exports = router;
