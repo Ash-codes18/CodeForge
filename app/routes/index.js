@@ -11,17 +11,19 @@ router.get('/hackathon', function(req, res, next) {
   res.render('hackathon');
 });
 
-//login
+//login page
 router.get('/login', function(req, res, next) {
   res.render('login');
 });
 
+//profile page
 router.get('/profile', function(req, res, next) {
   res.render('profile');
 });
 
 //organisatin page
-router.get('/organisations', function(req, res, next) {
+router.get('/organisation', function(req, res, next) {
   res.render('organisation');
 });
+
 module.exports = router;
