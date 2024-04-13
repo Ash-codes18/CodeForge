@@ -45,7 +45,11 @@ router.get('/file-upload', function(req, res, next) {
   res.render('file-upload');
 });
 
-//file-upload page
+
+router.get('/about', function(req, res, next) {
+  res.render('about');
+});
+
 router.get('/code', function(req, res, next) {
   res.render('code');
 });
