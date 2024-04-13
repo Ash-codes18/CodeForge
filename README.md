@@ -10,8 +10,4 @@
 - [ ] implement a chat functionality for hackathon participants
 
  
-register now -> join as team/individual -> create team/join team -> enter team details -> File upload page 
-
--> code editor -> problem statement -> submit -> notification -> chat -> leaderboard -> results
-
 
