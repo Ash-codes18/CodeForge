@@ -36,4 +36,9 @@ router.get('/about', function(req, res, next) {
   res.render('about');
 });
 
+//file-upload page
+router.get('/file-upload', function(req, res, next) {
+  res.render('file-upload');
+});
+
 module.exports = router;
