@@ -1,0 +1,34 @@
+
+.profile{
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+}
+#backimg{
+    width: 100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgaC3PsrguhP9iYj1qy9whdD1ZXnmnz-jycqD807LhIeb1Py6G");
+    height: 200px;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    border-radius: 10px;
+}
+img{
+    position: absolute;
+    bottom: 0%;
+    /* margin-top: 20px; */
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius:50% ;
+}
+#text1{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 250px;
+}
+#text1 span{
+
+    margin-left: 50px;
+}
