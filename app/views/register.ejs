@@ -6,8 +6,7 @@
     <title>Register</title>
     <link rel="shortcut icon" href="images/assets/logo-favicon-color.svg" type="image/x-icon">
     <link rel="stylesheet" href="stylesheets/login.css" />
-  
-</head>
+    <link rel="stylesheet" href="stylesheets/register.css" />
 <body>
     <main>
         <div class="box">
@@ -21,7 +20,7 @@
                 </div>
   
                 <div class="heading">
-                  <h2>Join Individually</h2>
+                  <h2>Join as an Individual</h2>
                   <h6>Have a team?</h6>
                   <a href="#" class="toggle">Join as a team</a>
                 </div>
@@ -35,18 +34,7 @@
                       autocomplete="off"
                       required
                     />
-                    <label>Name</label>
-                  </div>
-  
-                  <div class="input-wrap">
-                    <input
-                      type="email"
-                      minlength="4"
-                      class="input-field"
-                      autocomplete="off"
-                      required
-                    />
-                    <label>Email</label>
+                    <label>Team Name</label>
                   </div>
   
                   <input type="submit" value="Join Team" class="sign-btn" />
@@ -65,7 +53,7 @@
                 </div>
   
                 <div class="heading">
-                  <h2>Create Team</h2>
+                  <h2>Join as a Team</h2>
                   <h6>Don't have a team yet?</h6>
                   <a href="#" class="toggle">Join Individually</a>
                 </div>
@@ -79,21 +67,14 @@
                       autocomplete="off"
                       required
                     />
-                    <label>Leader Name</label>
+                    <label>Team Name</label>
                   </div>
+  
+                  
   
                   <div class="input-wrap">
                     <input
-                      type="email"
-                      class="input-field"
-                      autocomplete="off"
-                      required
-                    />
-                    <label>Email</label>
-                  </div>
-  
-                  <div class="input-wrap">
-                    <input
+                    id="memnum"
                       type="number"
                       minlength="4"
                       class="input-field"
@@ -103,7 +84,7 @@
                     <label>No of Team Members</label>
                   </div>
   
-                  <input type="submit" value="Create Team" class="sign-btn" />
+                  <input type="submit" value="Join as a Team" class="sign-btn" onclick=popup() />
   
                   <p class="text">
                     By signing up, I agree to the
@@ -140,10 +121,15 @@
           </div>
         </div>
       </main>
-  
+      <div id="main2" class="hide" >
+        <div id="popup13" >
+            <p>Team Created Successfully&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#63E6BE" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></p>
+            <span>Redirecting to home page....</span>
+          </div>
+      </div>
+      
       <!-- Javascript file -->
-  
       <script src="javascripts/login.js"></script>
-   
+      <script src="javascripts/register.js"></script>
 </body>
 </html>
