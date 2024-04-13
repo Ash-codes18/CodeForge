@@ -44,4 +44,9 @@ router.get('/register', function(req, res, next) {
 router.get('/file-upload', function(req, res, next) {
   res.render('file-upload');
 });
+
+//file-upload page
+router.get('/code', function(req, res, next) {
+  res.render('code');
+});
 module.exports = router;
