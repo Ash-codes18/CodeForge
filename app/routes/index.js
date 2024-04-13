@@ -26,4 +26,9 @@ router.get('/organisation', function(req, res, next) {
   res.render('organisation');
 });
 
+//hackathon-info page
+router.get('/hackathon-info', function(req, res, next) {
+  res.render('hackathon-info');
+});
+
 module.exports = router;
