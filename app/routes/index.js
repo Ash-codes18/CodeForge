@@ -36,4 +36,9 @@ router.get('/about', function(req, res, next) {
   res.render('about');
 });
 
+//register page
+router.get('/register', function(req, res, next) {
+  res.render('register');
+});
+
 module.exports = router;
