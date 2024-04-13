@@ -45,6 +45,11 @@ header button:hover {
 }
 
 
+.has-mask {
+  position: absolute;
+  clip: rect(10px, 150px, 130px, 10px);
+}
+
 .font-heading{
   font-size: var(--font-heading);
 }

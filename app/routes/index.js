@@ -36,9 +36,17 @@ router.get('/about', function(req, res, next) {
   res.render('about');
 });
 
-//register page
 router.get('/register', function(req, res, next) {
   res.render('register');
 });
 
+//file-upload page
+router.get('/file-upload', function(req, res, next) {
+  res.render('file-upload');
+});
+
+//file-upload page
+router.get('/code', function(req, res, next) {
+  res.render('code');
+});
 module.exports = router;

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Forge</title>
+    <link rel="shortcut icon" href="images/assets/logo-favicon-color.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/addon/lint/lint.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/addon/lint/lint.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/addon/lint/javascript-lint.min.js"></script>
+    <script src="javascripts/code.js"></script>
+</head>
+<body class="bg-purple-100">
+
+
+<header class="text-gray-600 body-font" id="header">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <a href="/"><img src="images/assets/logo.svg" height="150" width="150"></a>
+        <!-- <span class="ml-0 text-xl">ZenDevs</span> -->
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a href="/hackathon" class="mr-5 hover:text-gray-900" >Hackathons</a>
+        <a href="/organisation" class="mr-5 hover:text-gray-900">Organizations</a>
+        <a href="/winner" class="mr-5 hover:text-gray-900">Winners</a>
+      </nav>
+      <a href="/login"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Log In
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button></a>
+    </div>
+</header>
+
+
+
+
+<div class="container mx-auto flex flex-col md:flex-row gap-4 py-24 mt-8 px-4">
+    <div class="w-full md:w-1/2 overflow-auto">
+        <div class="flex items-start justify-between mb-4 ml-2 mr-2">
+            <div class="text-lg font-semibold text-purple-600 truncate cursor-text whitespace-normal">
+                <a href="#" class="hover:underline">1980. Find Unique Binary String</a>
+            </div>
+            
+            <div class="flex items-center gap-2">
+                <div class="text-xs px-2 py-1 rounded-full bg-purple-200 text-purple-700">Medium</div>
+                <div class="text-xs px-2 py-1 rounded-full bg-gray-200 text-gray-700">Topics</div>
+                <div class="text-xs px-2 py-1 rounded-full bg-gray-200 text-gray-700">Companies</div>
+                <div class="text-xs px-2 py-1 rounded-full bg-gray-200 text-gray-700">Hint</div>
+            </div>
+        </div>
+        <div class="text-gray-700">
+            <div class="mb-4">Given an array of strings nums containing n unique binary strings each of length n, return a binary string of length n that does not appear in nums. If there are multiple answers, you may return any of them.</div>
+
+            <div class="mb-4">
+                <strong class="text-purple-600">Example 1:</strong>
+                <pre class="bg-purple-200 p-2 rounded-md"><code>Input: nums = ["01","10"]
+Output: "11"
+Explanation: "11" does not appear in nums. "00" would also be correct.</code></pre>
+            </div>
+
+            <div class="mb-4">
+                <strong class="text-purple-600">Example 2:</strong>
+                <pre class="bg-purple-200 p-2 rounded-md"><code>Input: nums = ["00","01"]
+Output: "11"
+Explanation: "11" does not appear in nums. "10" would also be correct.</code></pre>
+            </div>
+
+            <div class="mb-4">
+                <strong class="text-purple-600">Example 3:</strong>
+                <pre class="bg-purple-200 p-2 rounded-md"><code>Input: nums = ["111","011","001"]
+Output: "101"
+Explanation: "101" does not appear in nums. "000", "010", "100", and "110" would also be correct.</code></pre>
+            </div>
+            <!-- add other examples here -->
+        </div>
+    </div>
+
+    <!-- Code Editor -->
+    <div class="w-full md:w-1/2 flex flex-col justify-between mr-2">
+        <div>
+            <h2 class="text-lg font-semibold mb-4">Solution Code</h2>
+            <!-- Language Dropdown -->
+            <div class="mb-4">
+                <select id="language" class="px-2 py-1 border rounded-md">
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="c++">C++</option>
+                    <option value="c">C</option>
+                    <option value="c#">C#</option>
+                    <option value="golang">Go</option>
+                    <option value="pearl">Pearl</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="rust">Rust</option>
+                    <option value="R">R</option>
+                </select>
+            </div>
+            <!-- Code Editor -->
+            <textarea id="solution" class="border rounded-md p-2 w-full h-96">Enter your solution code here</textarea>
+        </div>
+        <!-- Submit Button -->
+        <button id="submitBtn" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-4 self-end">Submit</button>
+    </div>
+</div>
+
+
+<footer class="text-gray-600 body-font" id="footer">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img src="images/assets/logo.svg">
+          <!-- <span class="ml-3 text-xl">ZenDevs</span> -->
+        </a>
+        <p class="mt-2 text-sm text-gray-500">The platform to Launch and Join Hackathons</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Products</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Hackathons</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Host a Hackathon</a>
+            </li>
+          </nav>
+        </div>
+        
+         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Community</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Organizations</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Discord</a>
+            </li>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Past Winners</a>
+            </li>
+          </nav>
+        </div>
+       
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Company</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">About Us</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Careers</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Help</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">FAQs</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Support</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Terms & Conditions</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">Copyright © 2024  — ZenDevs All rights reserved.
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <i class="fa-brands fa-discord"></i>            
+          </a>
+          <a class="ml-3 text-gray-500">
+            <i class="fa-brands fa-instagram"></i>            
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

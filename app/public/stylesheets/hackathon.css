@@ -70,7 +70,8 @@
     & .card-image>img{
         border-radius: 8px 8px 0 0;
         width: 100%;
-        object-fit: contain;  
+        max-height: 170px;
+        object-fit: cover;  
     }
 }
 .card-logo{
