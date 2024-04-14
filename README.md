@@ -1,6 +1,6 @@
 # To-DO
 
-- [x] Add firebase authentication to login/signup page.
+- [ ] Add firebase authentication to login/signup page.
 - [ ] Add backend to the hackathon hosting form.
 - [x] implement search functionality on the hackathons page
 - [x] Add a code editor and problem statement page for a hackathon.
